@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <!DOCTYPE PRJ SYSTEM "DS_stocks.ggxh-castle.ggxh.dtd">
 <PRJ>
+  <Folder Name="/home/ggxh/DS/stocks/code/hdfs_engine/">
+    <Expand>1</Expand>
+  </Folder>
   <Project_Information>
     <Project_Start>020000000E000000110000000B0000000A00000076000000000000003A01000000000000FC7F0000808FFFFFFFFFFFFFB0FA66A42356000098</Project_Start>
   </Project_Information>

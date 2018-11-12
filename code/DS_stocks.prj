@@ -17,5 +17,10 @@
   </Project_ID>
   <Files>
     <File>main.py</File>
+    <File>/home/ggxh/DS/stocks/code/hdfs_engine/</File>
+    <File>hdfs_engine/__init__.py</File>
   </Files>
+  <Group_Filter>
+    <OF Name="/home/ggxh/DS/stocks/code/hdfs_engine/">*.*</OF>
+  </Group_Filter>
 </PRJ>
