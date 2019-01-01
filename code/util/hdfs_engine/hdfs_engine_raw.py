@@ -3,21 +3,22 @@ import subprocess
 import hdfs_engine
 
 class raw_hdfs_engine(hdfs_engine):
+  def __init__(self):
+    hdfs_engine.__init__(self)
  
-  def exists(self, datadir):
+  def fold_exists(self, datadir):
     """check if hdfs folder exists"""
-    return False
-
-  def get_folderlist(self, datadir):
-   """return folder list"""
     return subprocess.call(["hadoop", "fs", "-test", "-d", datadir]) == 0
 
-  def get_listfile(self, datadir):
+  def list_folder(self, datadir):
     """collect file name list under the hdfs datadir"""
-    if not self.get_folderlist(datadir)
+    if not self.folder_exists(datadir)
       return []
       
-    files = subprocess.check_output(["hadoop", "fs", "-ls", datadir])
+    try:
+      files = subprocess.check_output(["hadoop", "fs", "-ls", datadir])
+    except CalledProcessError as cpe:
+      
     folder_name_list = []
     for line in files.split():
       ll = line.split("/")
