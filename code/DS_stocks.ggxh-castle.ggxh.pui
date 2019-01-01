@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="ASCII"?>
 <!DOCTYPE PRJ SYSTEM "DS_stocks.ggxh-castle.ggxh.dtd">
 <PRJ>
+  <Folder Name="">
+    <Expand>0</Expand>
+  </Folder>
+  <Folder Name="/home/ggxh/DS/stocks/code/util/">
+    <Expand>1</Expand>
+  </Folder>
+  <Folder Name="/home/ggxh/DS/stocks/code/util/status/">
+    <Expand>1</Expand>
+  </Folder>
   <Folder Name="/home/ggxh/DS/stocks/code/hdfs_engine/">
     <Expand>1</Expand>
   </Folder>
   <Project_Information>
-    <Project_Start>020000000E000000110000000B0000000A00000076000000000000003A01000000000000FC7F0000808FFFFFFFFFFFFFB0FA66A42356000098</Project_Start>
+    <Working_Time>-5203175898516251</Working_Time>
+    <Project_Start>050000003B0000000A00000001000000000000007700000002000000000000000000000081550000808FFFFFFFFFFFFFB02A109481550000F7</Project_Start>
+    <MDIPerspective/>
   </Project_Information>
   <Active_Settings>
     <Active_File_Display_Mode>-1</Active_File_Display_Mode>
+    <Active_File>/home/ggxh/DS/stocks/code/hdfs_engine/hdfs_engine.py</Active_File>
   </Active_Settings>
+  <Folder Name="/home/ggxh/DS/stocks/code/util/hdfs_engine/">
+    <Expand>1</Expand>
+  </Folder>
 </PRJ>

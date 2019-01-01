@@ -16,11 +16,14 @@
     <Signature>UE Proj: v.1</Signature>
   </Project_ID>
   <Files>
-    <File>main.py</File>
-    <File>/home/ggxh/DS/stocks/code/hdfs_engine/</File>
-    <File>hdfs_engine/__init__.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/</File>
+    <File>/home/ggxh/DS/stocks/code/util/status/</File>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/</File>
   </Files>
   <Group_Filter>
+    <OF Name="/home/ggxh/DS/stocks/code/util/">*.*</OF>
+    <OF Name="/home/ggxh/DS/stocks/code/util/status/">*.*</OF>
     <OF Name="/home/ggxh/DS/stocks/code/hdfs_engine/">*.*</OF>
+    <OF Name="/home/ggxh/DS/stocks/code/util/hdfs_engine/">*.*</OF>
   </Group_Filter>
 </PRJ>
