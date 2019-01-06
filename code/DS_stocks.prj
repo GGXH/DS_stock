@@ -17,6 +17,7 @@
   </Project_ID>
   <Files>
     <File>/home/ggxh/DS/stocks/code/util/</File>
+    <File>util/hdfs_engine/_init_paths.py</File>
     <File>/home/ggxh/DS/stocks/code/util/status/</File>
     <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/</File>
   </Files>

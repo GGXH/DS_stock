@@ -1,4 +1,4 @@
-class messager:
+class messager(Exception):
  def __init__(self):
   self._code = 0
   self._message = ""
@@ -58,5 +58,3 @@ class messager:
    
   if "sys_message" in msg:
    self.sys_message = msg["sys_message"]
-   
- 

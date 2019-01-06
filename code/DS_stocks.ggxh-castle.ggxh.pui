@@ -7,6 +7,8 @@
   <Folder Name="/home/ggxh/DS/stocks/code/util/">
     <Expand>1</Expand>
   </Folder>
+  <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/status/"/>
+  <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/hdfs_engine/"/>
   <Folder Name="/home/ggxh/DS/stocks/code/util/status/">
     <Expand>1</Expand>
   </Folder>
@@ -14,8 +16,8 @@
     <Expand>1</Expand>
   </Folder>
   <Project_Information>
-    <Working_Time>-5203175898516251</Working_Time>
-    <Project_Start>050000003B0000000A00000001000000000000007700000002000000000000000000000081550000808FFFFFFFFFFFFFB02A109481550000F7</Project_Start>
+    <Working_Time>1674579157049636</Working_Time>
+    <Project_Start>24000000280000000A000000060000000000000077000000000000000500000000000000BD550000808FFFFFFFFFFFFFB04AB3E6BD55000098</Project_Start>
     <MDIPerspective/>
   </Project_Information>
   <Active_Settings>
@@ -23,6 +25,6 @@
     <Active_File>/home/ggxh/DS/stocks/code/hdfs_engine/hdfs_engine.py</Active_File>
   </Active_Settings>
   <Folder Name="/home/ggxh/DS/stocks/code/util/hdfs_engine/">
-    <Expand>1</Expand>
+    <Expand>0</Expand>
   </Folder>
 </PRJ>

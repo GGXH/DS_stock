@@ -2,18 +2,44 @@ import _init_paths
 import util.status.messager as msg
 
 class hdfs_engine:
-  def __init__(self):
+  def __init__(self, host = None, port = None, username = None, driver = None):
+   self._host = host
+   self._port = port
+   self._username = username
+   self._driver = driver
    self._msg = msg()
   
   @property
-  def msg(self):
-   return self._msg
+  def driver(self):
+   return self._driver
    
-  @msg.setter
-  def msg(self, msg):
-   if type(msg) is not util.status.messager:
-     raise TypeError('Wrong messager set to hdfs engine')
-   self._msg = msg
+  @driver.setter
+  def driver(self, driver):
+   self._driver = driver 
+  
+  @property
+  def host(self):
+   return self._host
+   
+  @host.setter
+  def host(self, host):
+   self._host = host
+   
+  @property
+  def port(self):
+   return self._port
+   
+  @port.setter
+  def port(self, port):
+   self._port = port
+   
+  @property
+  def username(self):
+   return self._username
+   
+  @username.setter
+  def username(self, username):
+   self._username = username
     
   def exists(self, datadir):
     """check if hdfs folder exists"""
