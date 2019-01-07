@@ -16,14 +16,21 @@
     <Expand>1</Expand>
   </Folder>
   <Project_Information>
-    <Working_Time>1674579157049636</Working_Time>
-    <Project_Start>24000000280000000A000000060000000000000077000000000000000500000000000000BD550000808FFFFFFFFFFFFFB04AB3E6BD55000098</Project_Start>
-    <MDIPerspective/>
+    <Working_Time>6812876413645193</Working_Time>
+    <Project_Start>03000000390000000500000007000000000000007700000001000000060000000000000087550000808FFFFFFFFFFFFFB0FA7C7B8755000028</Project_Start>
+    <MDIPerspective>(100,100,2098172,5,0,0,0,100000,3,(0,1,2,3,4))</MDIPerspective>
   </Project_Information>
   <Active_Settings>
     <Active_File_Display_Mode>-1</Active_File_Display_Mode>
     <Active_File>/home/ggxh/DS/stocks/code/hdfs_engine/hdfs_engine.py</Active_File>
   </Active_Settings>
+  <Open_Files>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/file_process.py</File>
+    <File>/home/ggxh/DS/stocks/testing/data/file_process.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/hdfs_engine_raw.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/hdfs_engine.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/status/messager.py</File>
+  </Open_Files>
   <Folder Name="/home/ggxh/DS/stocks/code/util/hdfs_engine/">
     <Expand>0</Expand>
   </Folder>

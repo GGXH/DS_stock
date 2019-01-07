@@ -8,7 +8,7 @@ class raw_hdfs_engine(hdfs_engine):
  
   def exists(self, datadir):
     """check if hdfs folder exists"""
-    return subprocess.call(["hadoop", "fs", "-test", "-d", datadir]) == 0
+    return subprocess.call(["hdfs", "dfs", "-test", "-e", datadir]) == 0
 
   def list_folder(self, datadir):
     """collect file name list under the hdfs datadir"""
@@ -16,7 +16,7 @@ class raw_hdfs_engine(hdfs_engine):
       return []
       
     try:
-      files = subprocess.check_output(["hadoop", "fs", "-ls", datadir])
+      files = subprocess.check_output(["hdfs", "dfs", "-ls", datadir])
     except subprocess.CalledProcessError as cpe:
       self.msg.clear()
       self.msg.code = cpe.code
@@ -38,7 +38,7 @@ class raw_hdfs_engine(hdfs_engine):
       self.msg.message = "[Error]: " + datadir + " exists and Failed to create"
       raise self.msg
     
-    rcode = subprocess.call(["hadoop", "fs", "-mkdir", datadir])
+    rcode = subprocess.call(["hdfs", "dfs", "-mkdir", datadir])
     if rcode != 0:
       self.msg.clear()
       self.msg.code = rcode
@@ -48,7 +48,7 @@ class raw_hdfs_engine(hdfs_engine):
 
   def rename(self, datadir, newdatadir):
     """rename hdfs folder"""
-    rcode = subprocess.call(["hadoop", "fs", "-mv", datadir, newdatadir])
+    rcode = subprocess.call(["hdfs", "dfs", "-mv", datadir, newdatadir])
     if rcode != 0:
       self.msg.clear()
       self.msg.code = rcode
@@ -56,51 +56,31 @@ class raw_hdfs_engine(hdfs_engine):
       raise self.msg
 
 
-  def rm(self, datapath, recursive = False):
+  def rm(self, datapath):
     """remove hdfs file/folder"""
-    return False   
+    try:
+      self._rm(datapath)
+    except util.status.messager as msg:
+      raise msg
 
 
-def recreate_hdfs_folder(datadir):
- """create hdfs folder"""
- rcode = subprocess.call(["hadoop", "fs", "-test", "-d", datadir])
- if rcode == 0:
-  rcode = rm_hdfs_folder(datadir)
-  if rcode != 0:
-   return rcode
- ##
- rcode = subprocess.call(["hadoop", "fs", "-mkdir", datadir])
- if rcode != 0:
-  print "Failed to create hdfs folder" + datadir
- return rcode 
+  def _rm(self, filepath):
+    """remove hdfs file"""
+    if not self.exists(filepath):
+      return
+    rcode = subprocess.call(["hdfs", "dfs", "-rm", "-r", datapath])
+    if rcode != 0:
+      self.msg.clear()
+      self.msg.code = rcode
+      self.msg.message = "[Error]: Failed to remove hdfs file " + datapath
+      raise self.msg
 
 
-
-def rename_hdfs_folder(datadir, newdatadir):
- """rename hdfs folder"""
- rcode = subprocess.call(["hadoop", "fs", "-mv", datadir, newdatadir])
- if rcode != 0:
-  print "Failed to rename hdfs folder " + datadir + " to " + newdatadir
- return rcode 
-
-
-
-def rm_hdfs_file(datapath):
- """remove hdfs file"""
- rcode = subprocess.call(["hadoop", "fs", "-rm", datapath])
- if rcode != 0:
-  print "Failed to remove hdfs file " + datapath
- return rcode
-
-
-
-def rm_hdfs_folder(datadir):
- """remove hdfs folder"""
- rcode = subprocess.call(["hadoop", "fs", "-test", "-d", datadir])
- if rcode == 0:
-  rcode = subprocess.call(["hadoop", "fs", "-rm", "-r", datadir])
-  if rcode != 0:
-   print "Failed to remove hdfs folder " + datadir
- else:
-  rcode = 0
- return rcode
+  def _leave_safe_mode(self):
+    """leave safe mode"""
+    rcode = subprocess.cal(["hdfs", "dfs", "-dfsadmin", "leave"])
+    if rcode != 0:
+      self.msg.clear()
+      self.msg.code = rcode
+      self.msg.message = "[Error]: Failed to turn off safemode of hdfs"
+      raise self.msg
