@@ -78,7 +78,7 @@ class raw_hdfs_engine(hdfs_engine):
 
   def _leave_safe_mode(self):
     """leave safe mode"""
-    rcode = subprocess.cal(["hdfs", "dfs", "-dfsadmin", "leave"])
+    rcode = subprocess.cal(["hdfs", "dfsadmin", "-safemode", "leave"])
     if rcode != 0:
       self.msg.clear()
       self.msg.code = rcode

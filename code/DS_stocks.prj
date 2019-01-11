@@ -16,12 +16,17 @@
     <Signature>UE Proj: v.1</Signature>
   </Project_ID>
   <Files>
+    <File>/home/ggxh/DS/stocks/code/util/dataframe/</File>
     <File>/home/ggxh/DS/stocks/code/util/</File>
+    <File>util/dataframe/__init__paths.py</File>
     <File>util/hdfs_engine/_init_paths.py</File>
     <File>/home/ggxh/DS/stocks/code/util/status/</File>
+    <File>util/dataframe/dataframeIF.py</File>
+    <File>util/dataframe/__init__.py</File>
     <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/</File>
   </Files>
   <Group_Filter>
+    <OF Name="/home/ggxh/DS/stocks/code/util/dataframe/">*.*</OF>
     <OF Name="/home/ggxh/DS/stocks/code/util/">*.*</OF>
     <OF Name="/home/ggxh/DS/stocks/code/util/status/">*.*</OF>
     <OF Name="/home/ggxh/DS/stocks/code/hdfs_engine/">*.*</OF>
