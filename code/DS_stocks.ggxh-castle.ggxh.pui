@@ -5,14 +5,14 @@
     <Expand>0</Expand>
   </Folder>
   <Folder Name="/home/ggxh/DS/stocks/code/util/dataframe/">
-    <Expand>1</Expand>
+    <Expand>0</Expand>
   </Folder>
   <Folder Name="/home/ggxh/DS/stocks/code/util/">
     <Expand>1</Expand>
   </Folder>
   <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/dataframe/">
     <Folder Name="/home/ggxh/DS/stocks/code/util/dataframe/">
-      <Expand>0</Expand>
+      <Expand>1</Expand>
     </Folder>
   </Folder>
   <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/status/"/>
@@ -24,14 +24,33 @@
     <Expand>1</Expand>
   </Folder>
   <Project_Information>
-    <Working_Time>-1019366973207191</Working_Time>
-    <Project_Start>1D00000034000000060000000B0000000000000077000000050000000A0000000000000064550000808FFFFFFFFFFFFFB03A6E1D64550000D8</Project_Start>
-    <MDIPerspective/>
+    <Working_Time>722140018770017</Working_Time>
+    <Project_Start>250000000100000007000000100000000000000077000000030000000F00000000000000BE550000808FFFFFFFFFFFFFB0CA8083BE55000072</Project_Start>
+    <MDIPerspective>(100,100,2098172,5,0,0,0,100000,4,(0,1,2,3,4,5,6))</MDIPerspective>
   </Project_Information>
+  <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/SPEngine/">
+    <Folder Name="/home/ggxh/DS/stocks/code/util/SPEngine/">
+      <Expand>1</Expand>
+    </Folder>
+  </Folder>
+  <Folder Name="util/ - /home/ggxh/DS/stocks/code/util/datastorage/">
+    <Folder Name="/home/ggxh/DS/stocks/code/util/datastorage/">
+      <Expand>1</Expand>
+    </Folder>
+  </Folder>
   <Active_Settings>
     <Active_File_Display_Mode>-1</Active_File_Display_Mode>
     <Active_File>/home/ggxh/DS/stocks/code/hdfs_engine/hdfs_engine.py</Active_File>
   </Active_Settings>
+  <Open_Files>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/file_process.py</File>
+    <File>/home/ggxh/DS/stocks/testing/data/file_process.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/dataframe/dataframeIF.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/hdfs_engine/hdfs_engine.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/SPEngine/SPEngine.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/status/messager.py</File>
+    <File>/home/ggxh/DS/stocks/code/util/dataframe/dataframeSpark.py</File>
+  </Open_Files>
   <Folder Name="/home/ggxh/DS/stocks/code/util/hdfs_engine/">
     <Expand>0</Expand>
   </Folder>

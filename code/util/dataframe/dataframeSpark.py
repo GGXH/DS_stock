@@ -1,10 +1,10 @@
+import util.dataframeIF.dataframeIF as dataframeIF
 import util.status.messager as msg
 
-class dataframeIF:
-  def __init__(self, name, data = None):
-    self._name = name
-    self._data = data
-    self._msg = msg()
+class dataframeSP(dataframeIF):
+  def __init__(self, name, engine = None, data = None):
+    dataframeIF.__init__(name, data)
+    self._engine = engine
     
   @property
   def col_name(self):
@@ -19,6 +19,14 @@ class dataframeIF:
   @data.setter
   def data(self, data):
     self._data = data
+    
+  @property
+  def engine(self):
+    return self._engine
+    
+  @engine.setter
+  def engine(self, engine):
+    self._engine = engine
     
   @property
   def name(self):
